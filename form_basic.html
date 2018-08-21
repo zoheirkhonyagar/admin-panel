@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>رادا | فرم ساده</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.rtl.css" rel="stylesheet">
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+                    <ul class="nav metismenu" id="side-menu">
+                        <li class="nav-header">
+                            <div class="dropdown profile-element"> <span>
+                                <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                                 </span>
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">ایمان عباسی</strong>
+                                 </span> <span class="text-muted text-xs block">مدیر هنری <b class="caret"></b></span> </span> </a>
+                                <ul class="dropdown-menu animated fadeInLeft m-t-xs">
+                                    <li><a href="profile.html">پروفایل</a></li>
+                                    <li><a href="contacts.html">مخاطبین</a></li>
+                                    <li><a href="mailbox.html">ایمیل</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="login.html">خروج</a></li>
+                                </ul>
+                            </div>
+                            <div class="logo-element">
+                                لوگو
+                            </div>
+                        </li>
+                        <li>
+                            <a href="index-2.html"><i class="fa fa-th-large"></i> <span class="nav-label">داشبورد ها</span> <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="index-2.html">داشبورد ورژن 1</a></li>
+                                <li><a href="dashboard_2.html">داشبورد ورژن 2</a></li>
+                                <li><a href="dashboard_3.html">داشبورد ورژن 3</a></li>
+                                <li><a href="dashboard_4_1.html">داشبورد ورژن 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">طرح ها</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">گراف ها</span><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="graph_flot.html">نمودار های فلوت</a></li>
+                                <li><a href="graph_morris.html">نمودار های موریس</a></li>
+                                <li><a href="graph_rickshaw.html">نمودار های ریکشا</a></li>
+                                <li><a href="graph_chartjs.html">نمودار های جی کوئری چارت</a></li>
+                                <li><a href="graph_chartist.html">نمودار های چارتیست</a></li>
+                                <li><a href="graph_peity.html">نمودار های پیتی</a></li>
+                                <li><a href="graph_sparkline.html">نمودار های اسپارک لاین</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">ایمیل </span><span class="label label-warning pull-left">16/24</span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="mailbox.html">دریافت</a></li>
+                                <li><a href="mail_detail.html">مشاهده ایمیل</a></li>
+                                <li><a href="mail_compose.html">ارسال ایمیل</a></li>
+                                <li><a href="email_template.html">قالب ایمیل</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">معیارها </span> <span class="label label-primary pull-left">جدید</span> </a>
+                        </li>
+                        <li>
+                            <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">ویجت ها</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">فرم ها</span><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li class="active"><a href="form_basic.html">فرم ساده</a></li>
+                                <li><a href="form_advanced.html">افزونه های پیشرفته</a></li>
+                                <li><a href="form_wizard.html">چند مرحله ای</a></li>
+                                <li><a href="form_file_upload.html">آپلود فایل</a></li>
+                                <li><a href="form_editors.html">ویرایشگر متن</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">مشاهده برنامه ها</span>  <span class="pull-left label label-primary">ویژه</span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="contacts.html">مخاطبین</a></li>
+                                <li><a href="profile.html">پروفایل</a></li>
+                                <li><a href="projects.html">پروژه ها</a></li>
+                                <li><a href="project_detail.html">جزئیات پروژه</a></li>
+                                <li><a href="teams_board.html">بورد تیم ها</a></li>
+                                <li><a href="social_feed.html">فید های اجتماعی</a></li>
+                                <li><a href="clients.html">مشتریان</a></li>
+                                <li><a href="full_height.html">مشاهده Outlook</a></li>
+                                <li><a href="file_manager.html">مدیریت فایل ها</a></li>
+                                <li><a href="calendar.html">تقویم</a></li>
+                                <li><a href="issue_tracker.html">رفع اشکال</a></li>
+                                <li><a href="blog.html">بلاگ</a></li>
+                                <li><a href="article.html">مقاله</a></li>
+                                <li><a href="faq.html">سوالات متداول</a></li>
+                                <li><a href="timeline.html">نوار زمان</a></li>
+                                <li><a href="pin_board.html">پین بورد</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">دیگر صفحات</span><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="search_results.html">نتایج جستجو</a></li>
+                                <li><a href="lockscreen.html">قفل صفحه</a></li>
+                                <li><a href="invoice.html">فاکتور</a></li>
+                                <li><a href="login.html">ورود</a></li>
+                                <li><a href="login_two_columns.html">ورود ورژن 2</a></li>
+                                <li><a href="forgot_password.html">فراموشی کلمه عبور</a></li>
+                                <li><a href="register.html">عضویت</a></li>
+                                <li><a href="404.html">خطای 404</a></li>
+                                <li><a href="500.html">خطای 500</a></li>
+                                <li><a href="empty_page.html">صفحه خالی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">متفرقه</span><span class="label label-info pull-left">جدید</span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="toastr_notifications.html">اطلاع رسانی</a></li>
+                                <li><a href="nestable_list.html">لیست های چند طبقه</a></li>
+                                <li><a href="agile_board.html">بورد برنامه ریزی</a></li>
+                                <li><a href="timeline_2.html">نوار زمان ورژن 2</a></li>
+                                <li><a href="diff.html">تفاوت</a></li>
+                                <li><a href="sweetalert.html">هشدار</a></li>
+                                <li><a href="idle_timer.html">زمان سنج بیکاری</a></li>
+                                <li><a href="spinners.html">لودینگ ها</a></li>
+                                <li><a href="tinycon.html">فاویکن زنده</a></li>
+                                <li><a href="google_maps.html">نقشه گوگل</a></li>
+                                <li><a href="code_editor.html">ویرایش کد</a></li>
+                                <li><a href="modal_window.html">پنجره مودال</a></li>
+                                <li><a href="forum_main.html">مشاهده انجمن</a></li>
+                                <li><a href="validation.html">اعتبار سنجی</a></li>
+                                <li><a href="tree_view.html">مشاهده درختی</a></li>
+                                <li><a href="chat_view.html">مشاهده گفتگو</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">عناصر رابط کاربری</span><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="typography.html">تایپوگرافی</a></li>
+                                <li><a href="icons.html">آیکن ها</a></li>
+                                <li><a href="draggable_panels.html">پنل های متحرک</a></li>
+                                <li><a href="buttons.html">دکمه ها</a></li>
+                                <li><a href="video.html">ویدیو</a></li>
+                                <li><a href="tabs_panels.html">پنل ها</a></li>
+                                <li><a href="tabs.html">تب ها</a></li>
+                                <li><a href="notifications.html">اطلاع رسانی ها و نکات</a></li>
+                                <li><a href="badges_labels.html">نشان ها، برچسب ها، درصد پیشرفت</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">ستونبندی</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-table"></i> <span class="nav-label">جداول</span><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="table_basic.html">جداول ایستا</a></li>
+                                <li><a href="table_data_tables.html">جداول اطلاعاتی</a></li>
+                                <li><a href="table_foo_table.html">جداول فو</a></li>
+                                <li><a href="jq_grid.html">جداول جی کوئری گرید</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">فروشگاه</span><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="ecommerce_products_grid.html">جدول محصولات</a></li>
+                                <li><a href="ecommerce_product_list.html">لیست محصولات</a></li>
+                                <li><a href="ecommerce_product.html">ویرایش محصولات</a></li>
+                                <li><a href="ecommerce-orders.html">سفارشات</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">گالری</span><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="basic_gallery.html">گالری لایت باکس</a></li>
+                                <li><a href="carousel.html">اسلایدر</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">سطح های منو </span><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li>
+                                    <a href="#">منوی سه سطحه <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">آیتم سطح سوم</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">آیتم سطح سوم</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">آیتم سطح سوم</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="#">آیتم سطح دوم</a></li>
+                                <li>
+                                    <a href="#">آیتم سطح دوم</a></li>
+                                <li>
+                                    <a href="#">آیتم سطح دوم</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">انیمیشن ها </span><span class="label label-info pull-left">62</span></a>
+                        </li>
+                        <li class="landing_link">
+                            <a target="_blank" href="landing.html"><i class="fa fa-star"></i> <span class="nav-label">صفحه فرود</span> <span class="label label-warning pull-left">جدید</span></a>
+                        </li>
+                        <li class="special_link">
+                            <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label">پکیج ها</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                <form role="search" class="navbar-form-custom" action="search_results.html">
+                    <div class="form-group">
+                        <input type="text" placeholder="جستجو" class="form-control" name="top-search" id="top-search">
+                    </div>
+                </form>
+            </div>
+            <ul class="nav navbar-top-links navbar-left">
+                <li>
+                    <span class="m-r-sm text-muted welcome-message">به بخش مدیریت خوش آمدید</span>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-right">
+                                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-left text-navy">5 ساعت پیش</small>
+                                    <strong>ایمن</strong> لورم ایپسوم <strong>ایمن</strong>. <br>
+                                    <small class="text-muted">دیروز 1:21 ب.ظ - 1394/06/10</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-right">
+                                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                                </a>
+                                <div class="media-body">
+                                    <small class="pull-left">46 ساعت پیش</small>
+                                    <strong>ایمان عباسی</strong> لورم ایپسوم <strong>ایمن</strong>. <br>
+                                    <small class="text-muted">3 روز پیش در 7:58 ب.ظ - 1394/06/10</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-right">
+                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-left">23 ساعت پیش</small>
+                                    <strong>ایمان عباسی</strong> لورم ایپسوم <strong>ایمن</strong>. <br>
+                                    <small class="text-muted">2 وز پیش در 2:30 ق.ظ - 1394/06/10</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                    <i class="fa fa-envelope"></i> <strong>مشاهده همه پیغام ها</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> شما 16 پیغام دارید
+                                    <span class="pull-left text-muted small">4 دقیقه پیش</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="profile.html">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 فالوور جدید
+                                    <span class="pull-left text-muted small">12 دقیقه پیش</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="grid_options.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> سرور ری استارت شد
+                                    <span class="pull-left text-muted small">4 دقیقه پیش</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>مشاهده همه هشدار ها</strong>
+                                    <i class="fa fa-angle-left fa-lg fa-fw"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> خروج
+                    </a>
+                </li>
+                <li>
+                    <a class="left-sidebar-toggle">
+                        <i class="fa fa-tasks"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>فرم ساده</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index-2.html">خانه</a>
+                        </li>
+                        <li>
+                            <a>فرم ها</a>
+                        </li>
+                        <li class="active">
+                            <strong>فرم ساده</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+            <div class="col-lg-7">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>فرم ساده <small>فرم ساده ورود</small></h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">گزینه 1</a>
+                                </li>
+                                <li><a href="#">گزینه 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-6 b-r"><h3 class="m-t-none m-b">ورود</h3>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی </p>
+                                <form role="form">
+                                    <div class="form-group"><label>ایمیل</label> <input type="email" placeholder="ایمیل خود را وارد کنید" class="form-control"></div>
+                                    <div class="form-group"><label>رمز عبور</label> <input type="password" placeholder="رمز عبور" class="form-control"></div>
+                                    <div>
+                                        <button class="btn btn-sm btn-primary pull-left m-t-n-xs" type="submit"><strong>ورود</strong></button>
+                                        <label> <input type="checkbox" class="i-checks"> به خاطر بسپار </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-6"><h4>عضو نیستید؟</h4>
+                                <p>شما میتوانید حساب کاربری ایجاد کنید.</p>
+                                <p class="text-center">
+                                    <a href="#"><i class="fa fa-sign-in big-icon"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-5">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Horizontal form</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">گزینه 1</a>
+                                    </li>
+                                    <li><a href="#">گزینه 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <form class="form-horizontal">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی </p>
+                                <div class="form-group"><label class="col-lg-2 control-label">ایمیل</label>
+
+                                    <div class="col-lg-10"><input type="email" placeholder="ایمیل" class="form-control"> <span class="help-block m-b-none">Example block-level help text here.</span>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-lg-2 control-label">رمز عبور</label>
+
+                                    <div class="col-lg-10"><input type="password" placeholder="رمز عبور" class="form-control"></div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                        <div class="i-checks"><label> <input type="checkbox"><i></i> به خاطر بسپار</label></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                        <button class="btn btn-sm btn-white" type="submit">ورود</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>فرم خطی</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">گزینه 1</a>
+                                    </li>
+                                    <li><a href="#">گزینه 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <form role="form" class="form-inline">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2" class="sr-only">آدرس ایمیل</label>
+                                    <input type="email" placeholder="ایمیل را وارد کنید" id="exampleInputEmail2"
+                                           class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword2" class="sr-only">رمزعبور</label>
+                                    <input type="password" placeholder="رمز عبور" id="exampleInputPassword2"
+                                           class="form-control">
+                                </div>
+                                <div class="checkbox m-l-xs">
+                                    <label for="checkbox1">
+                                            به خاطر بسپار.
+                                    </label>
+                                    <input type="checkbox" id="checkbox1">
+                                </div>
+                                <button class="btn btn-white" type="submit">ورود</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>فرم مدالی <small></small></h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">گزینه 1</a>
+                                    </li>
+                                    <li><a href="#">گزینه 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="text-center">
+                            <a data-toggle="modal" class="btn btn-primary" href="#modal-form">فرم</a>
+                            </div>
+                            <div id="modal-form" class="modal fade" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-sm-6 b-r"><h3 class="m-t-none m-b">ورود</h3>
+
+                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی </p>
+
+                                                    <form role="form">
+                                                        <div class="form-group"><label>ایمیل</label> <input type="email" placeholder="ایمیل" class="form-control"></div>
+                                                        <div class="form-group"><label>رمز عبور</label> <input type="password" placeholder="رمز عبور" class="form-control"></div>
+                                                        <div>
+                                                            <button class="btn btn-sm btn-primary pull-left m-t-n-xs" type="submit"><strong>ورود</strong></button>
+                                                            <label> <input type="checkbox" class="i-checks"> به خاطر بسپار</label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-sm-6"><h4>عضو نیستی؟</h4>
+                                                    <p>شما می توانید حساب کاربری ایجاد کنید.</p>
+                                                    <p class="text-center">
+                                                        <a href="#"><i class="fa fa-sign-in big-icon"></i></a>
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>همه عناصر فرم <small></small></h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">گزینه 1</a>
+                                    </li>
+                                    <li><a href="#">گزینه 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <form method="get" class="form-horizontal">
+                                <div class="form-group"><label class="col-sm-2 control-label">معمولی</label>
+
+                                    <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">متن کمک</label>
+                                    <div class="col-sm-10"><input type="text" class="form-control"> <span class="help-block m-b-none">بلوک متن کمک.</span>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">رمز عبور</label>
+
+                                    <div class="col-sm-10"><input type="password" class="form-control" name="password"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Placeholder</label>
+
+                                    <div class="col-sm-10"><input type="text" placeholder="" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-lg-2 control-label">غیر فعال</label>
+
+                                    <div class="col-lg-10"><input type="text" disabled="" placeholder="اینجا غیر فعال است" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-lg-2 control-label">Static control</label>
+
+                                    <div class="col-lg-10"><p class="form-control-static">email@example.com</p></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Checkboxes and radios <br/>
+                                    <small class="text-navy">Normal Bootstrap elements</small></label>
+
+                                    <div class="col-sm-10">
+                                        <div><label> <input type="checkbox" value=""> Option one is this and that&mdash;be sure to include why it's great </label></div>
+                                        <div><label> <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> Option one is this and that&mdash;be sure to
+                                            include why it's great </label></div>
+                                        <div><label> <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios"> Option two can be something else and selecting it will
+                                            deselect option one </label></div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">چک باکس های خطی</label>
+
+                                    <div class="col-sm-10"><label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1"> الف </label> <label class="checkbox-inline">
+                                        <input type="checkbox" value="option2" id="inlineCheckbox2"> ب </label> <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3" id="inlineCheckbox3"> ج </label></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Checkboxes &amp; radios <br/><small class="text-navy">Custom elements</small></label>
+
+                                    <div class="col-sm-10">
+                                        <div class="i-checks"><label> <input type="checkbox" value=""> <i></i> Option one </label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="" checked=""> <i></i> Option two checked </label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="" disabled="" checked=""> <i></i> Option three checked and disabled </label></div>
+                                        <div class="i-checks"><label> <input type="checkbox" value="" disabled=""> <i></i> Option four disabled </label></div>
+                                        <div class="i-checks"><label> <input type="radio" value="option1" name="a"> <i></i> Option one </label></div>
+                                        <div class="i-checks"><label> <input type="radio" checked="" value="option2" name="a"> <i></i> Option two checked </label></div>
+                                        <div class="i-checks"><label> <input type="radio" disabled="" checked="" value="option2"> <i></i> Option three checked and disabled </label></div>
+                                        <div class="i-checks"><label> <input type="radio" disabled="" name="a"> <i></i> Option four disabled </label></div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">چک باکس های  خطی</label>
+
+                                    <div class="col-sm-10"><label class="checkbox-inline i-checks"> <input type="checkbox" value="option1">الف </label>
+                                        <label class="checkbox-inline i-checks"> <input type="checkbox" value="option2"> ب </label>
+                                        <label class="checkbox-inline i-checks"> <input type="checkbox" value="option3"> ج </label></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">انتخاب</label>
+
+                                    <div class="col-sm-10"><select class="form-control m-b" name="account">
+                                        <option>گزینه 1</option>
+                                        <option>گزینه 2</option>
+                                        <option>گزینه 3</option>
+                                        <option>گزینه 4</option>
+                                    </select>
+
+                                        <div class="col-lg-4 m-l-n"><select class="form-control" multiple="">
+                                            <option>گزینه 1</option>
+                                            <option>گزینه 2</option>
+                                            <option>گزینه 3</option>
+                                            <option>گزینه 4</option>
+                                        </select></div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group has-success"><label class="col-sm-2 control-label">Input with success</label>
+
+                                    <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group has-warning"><label class="col-sm-2 control-label">Input with warning</label>
+
+                                    <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group has-error"><label class="col-sm-2 control-label">Input with error</label>
+
+                                    <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Control sizing</label>
+
+                                    <div class="col-sm-10"><input type="text" placeholder=".input-lg" class="form-control input-lg m-b">
+                                        <input type="text" placeholder="Default input" class="form-control m-b"> <input type="text" placeholder=".input-sm" class="form-control input-sm">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Column sizing</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="row">
+                                            <div class="col-md-2"><input type="text" placeholder=".col-md-2" class="form-control"></div>
+                                            <div class="col-md-3"><input type="text" placeholder=".col-md-3" class="form-control"></div>
+                                            <div class="col-md-4"><input type="text" placeholder=".col-md-4" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Input groups</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="input-group m-b"><span class="input-group-addon">@</span> <input type="text" placeholder="Username" class="form-control"></div>
+                                        <div class="input-group m-b"><input type="text" class="form-control"> <span class="input-group-addon">.00</span></div>
+                                        <div class="input-group m-b"><span class="input-group-addon">$</span> <input type="text" class="form-control"> <span class="input-group-addon">.00</span></div>
+                                        <div class="input-group m-b"><span class="input-group-addon"> <input type="checkbox"> </span> <input type="text" class="form-control"></div>
+                                        <div class="input-group"><span class="input-group-addon"> <input type="radio"> </span> <input type="text" class="form-control"></div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Button addons</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="input-group m-b"><span class="input-group-btn">
+                                            <button type="button" class="btn btn-primary">برو!</button> </span> <input type="text" class="form-control">
+                                        </div>
+                                        <div class="input-group"><input type="text" class="form-control"> <span class="input-group-btn"> <button type="button" class="btn btn-primary">برو!
+                                        </button> </span></div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">With dropdowns</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="input-group m-b">
+                                            <div class="input-group-btn">
+                                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">Action <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                             <input type="text" class="form-control"></div>
+                                        <div class="input-group"><input type="text" class="form-control">
+
+                                            <div class="input-group-btn">
+                                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">Action <span class="caret"></span></button>
+                                                <ul class="dropdown-menu pull-right">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">Segmented</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="input-group m-b">
+                                            <div class="input-group-btn">
+                                                <button tabindex="-1" class="btn btn-white" type="button">Action</button>
+                                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                            <input type="text" class="form-control"></div>
+                                        <div class="input-group"><input type="text" class="form-control">
+
+                                            <div class="input-group-btn">
+                                                <button tabindex="-1" class="btn btn-white" type="button">Action</button>
+                                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu pull-right">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <div class="col-sm-4 col-sm-offset-2">
+                                        <button class="btn btn-white" type="submit">لغو</button>
+                                        <button class="btn btn-primary" type="submit">ذخیره</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="pull-left">
+                10گیگا بایت از<strong>250 گیگابایت</strong> خالی است.
+                    </div>
+                    <div>
+                <strong>کلیه حقوق محفوظ است</strong>
+                1393-1395 &copy; <a href="http://www.webbyme.ir" target="_blank">استودیو طراحی وب من</a>
+                    </div>
+        </div>
+
+        </div>
+        </div>
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/rada.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.i-checks').iCheck({
+                    checkboxClass: 'icheckbox_square-green',
+                    radioClass: 'iradio_square-green',
+                });
+            });
+        </script>
+</body>
+</html>
